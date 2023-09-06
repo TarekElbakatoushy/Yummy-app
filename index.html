@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/Main.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Yummy!</title>
+</head>
+<body>
+
+<div id="loader">
+<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+<div id="side">
+    <div id="sideNav">
+        <ul>
+            <li onclick="search()">Search</li>
+            <li onclick="getCategories()">Categories</li>
+            <li onclick="getIngredients()">Ingredients</li>
+            <li onclick="getArea()">Area</li>
+            <li onclick="showContact()">Contact Us</li>
+        </ul>
+    </div>
+    <div id="icons" class="d-flex flex-column justify-content-around align-items-center">
+        <div class="logo">
+            <img src="./Imgs/delicious.png" alt="" class="w-100">
+        </div>
+        <i class="fa-solid fa-bars" id="bars"></i>
+        <i class="fa-solid fa-x" id="close"></i>
+        <div class="side-icons d-flex flex-column justify-content-center align-content-center">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-behance"></i>
+                <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+</div>
+<section id="Data">
+    <div class="container">
+    <div id="Contact"></div>
+    <div id="Search"></div>
+    <div class="row" id="all">
+    </div>
+    </div>
+</section>
+<script src="./JS/JQuery.js"></script>
+<script src="./JS/bootstrap.bundle.min.js"></script>
+<script src="./JS/Home.js"></script>
+</body>
+</html>
